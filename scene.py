@@ -11,7 +11,7 @@ class GravitInteraction(Scene):
         #total duration of the animation
         duration = 5
 
-       '''ANIMATION'''
+        '''ANIMATION'''
         t = 0
         while t <= duration:
             for planet in planets:
