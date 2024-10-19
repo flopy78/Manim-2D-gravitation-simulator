@@ -1,6 +1,6 @@
 ## Requirements
 
-This project requires the [Manim CE](https://docs.manim.community/en/stable/installation.html) library, as well as numpy.
+This project requires the [Manim CE](https://docs.manim.community/en/stable/installation.html) (and all its dependencies) library, as well as numpy.
 
 When installing Manim, you might encounter the following problems :
  * The FFMPEG executable might not be configured. To fix that, you can download it [here](https://ffmpeg.org/download.html) (download the Static Build for your OS) and then add the path in the field "ffmpeg_executable" of the "manim.cfg" file. To do so, you can use if necessary the command "manim cfg export".
