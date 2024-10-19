@@ -4,8 +4,8 @@ from planet import Planet
 class GravitInteraction(Scene):
     def construct(self):
         '''PARAMETERS'''
-        #list of planets (arguments : scene instance, id, mass, initial x, initial y)
-        planets = [Planet(self,0,3,-3,0),Planet(self,2,5,-1,1),Planet(self,1,1,1,1)]
+        #list of planets (arguments : scene instance, id, mass, initial x, initial y, collision speed factor)
+        planets = [Planet(self,0,3,-3,0,0.9),Planet(self,2,5,-1,1,0.9),Planet(self,1,1,1,1,0.9)]
         #time interval between two images
         dt = 0.1
         #total duration of the animation
