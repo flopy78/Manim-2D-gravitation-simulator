@@ -8,6 +8,6 @@ When installing Manim, you might encounter the following problems :
 
 ## Use
 
-To execute the project, set your parameters in the dedicated lines of the "scene.py" file, and then execute the "manim scene.py GravitInteraction" command.
+To execute the project, set your parameters in the dedicated lines of the "scene.py" file (an example is already in it), and then execute the "manim scene.py GravitInteraction" command.
 
 Wait the time Manim does its job (it might take a while !) and grab the output video in the "video" folder, which will be automatically created by Manim.
