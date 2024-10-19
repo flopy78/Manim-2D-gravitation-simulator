@@ -2,7 +2,7 @@ from manim import *
 from computations import *
 
 class Planet:
-    def __init__(self,scene,id,mass,x0,y0):
+    def __init__(self,scene,id,mass,x0,y0,collide_coeff):
         self.id = id
         self.mass = mass
         self.x = x0
@@ -15,6 +15,8 @@ class Planet:
         scene.add(self.text)
         self.vx = 0
         self.vy = 0
+        self.collide_coeff = collide_coeff
+        
     def update_v(self,planets,dt):
         forceX = 0
         forceY = 0
@@ -33,7 +35,7 @@ class Planet:
         for planet in planets:
             if planet.id != self.id:
                 if euclid_dist(self,planet) <= (self.radius + planet.radius):
-                    self.vx,self.vy = -self.vx*0.5,-self.vy*0.5
+                    self.vx,self.vy = -self.vx*self.collide_coeff,-self.vy*self.collide_coeff
 
     def update_pos(self,dt):
         self.x += self.vx*dt
